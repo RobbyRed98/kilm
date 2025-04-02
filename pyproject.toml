@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kilm"
+version = "0.1.0"
+authors = [{ name = "RobbyRed" }]
+description = "A kilmainham ticket scraper CLI that sends an email if tour timeslots are available."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests", "beautifulsoup4"]
+
+[project.scripts]
+kilm = "kilm.kilm:main"
+
+[project.license]
+file = "LICENSE"
